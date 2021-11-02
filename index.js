@@ -174,7 +174,7 @@ if (computer < 0.34) {
 
 function game(user, computer){
   if(user === computer){
-    return "its a tie"
+    return "it's a tie"
   } else if(user === "scissors" && computer === "paper"){
     return "you win!"
   }else if(user === "paper" && computer === "rock"){
@@ -199,9 +199,11 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(km){
+  if(km >= 1){
+    return km * 0.621371;}
 }
+console.log(miles(10))
 
 
 
@@ -213,10 +215,12 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(cm){
+if(cm >= 1){
+  return cm / 30.48
 }
-
+}
+console.log(feet(3))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
