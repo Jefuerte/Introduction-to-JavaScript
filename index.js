@@ -19,7 +19,9 @@ Do the following:
 
    HINT: no function required
 */
-
+let votingAge = 23;
+if(votingAge >= 18)
+console.log('True')
 
 
 /*
@@ -34,6 +36,13 @@ Do the following:
 */
 
 
+let num1 = 3;
+let num2 = 7;
+if (num2 <= 7){
+  num1 = 11;
+}
+
+console.log(num1)
 
 
 
@@ -47,8 +56,8 @@ Do the following:
 
    HINT: look up the Number method
 */
-
-
+let year = Number("1999")
+console.log(year)
 
 
 /*
@@ -60,10 +69,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(a, b){
+  return a * b;
 }
-
+console.log(multiply(10, 5))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -76,10 +85,13 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
-}
 
+function dogYears(age){
+  if(age >= 1){
+  return age * 7;
+ }
+}
+console.log(dogYears(1))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -150,11 +162,30 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+let computer = Math.random();
 
-function game(user, computer){
-  /*add your code here*/
+if (computer < 0.34) {
+  computer = "rock";
+} else if(computer <= 0.67) {
+  computer = "paper";
+} else {
+  computer = "scissors";
 }
 
+function game(user, computer){
+  if(user === computer){
+    return "its a tie"
+  } else if(user === "scissors" && computer === "paper"){
+    return "you win!"
+  }else if(user === "paper" && computer === "rock"){
+    return "you win!"
+  }else if(user === "rock" && computer === "scissors"){
+    return "you win!"
+  }else {
+    return "you lose!"
+  }
+}
+console.log(game("rock", computer))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
