@@ -234,13 +234,14 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(number){
-      for (let i = number; i >= 0; i--){
-        return `${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around 
-        ${number - 1} bottles of soda on the wall`
+      for (let i = number; i > 0; i--){
+        return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around 
+        ${i - 1} bottles of soda on the wall`
         }
     }
 
-console.log(annoyingSong(10))
+console.log('task 6', annoyingSong(8))
+console.log('task 6', annoyingSong(7))
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 //Grade Calculator
